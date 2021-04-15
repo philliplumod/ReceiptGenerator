@@ -8,13 +8,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.text.SimpleDateFormat;
 import java.util.InputMismatchException;
-import java.util.List;
 import java.util.Scanner;
 
 public class ReceiptGenerator {
@@ -39,6 +36,7 @@ public class ReceiptGenerator {
        FileWriter fw =new FileWriter(file);
        
        Scanner s = new Scanner(System.in);
+    
        char responseYN = 0;
        String lineiL,linepL;
        double payment,change;
@@ -48,8 +46,10 @@ public class ReceiptGenerator {
        String currentLine;
        String price;
        Scanner scanner = new Scanner(new File("itemList.txt"));
+       System.out.println(" ");
        System.out.println("==========WELCOME TO ALYSHA'S BAKESHOP==========");
-       System.out.println("ID/Bar Code | BREAD NAME |\t PRICE");
+       System.out.println("Date: " + myDateString);
+       System.out.println("ID/Bar Code | BREAD NAME |\tPRICE ");
        while((lineiL = iL.readLine()) != null){ 
           
             itemListToDisplay.add(lineiL);
@@ -93,8 +93,10 @@ public class ReceiptGenerator {
        try{
            iL.close();
            System.out.println("\t\t------Summary------");
+           System.out.println("Date: " + myDateString);
            System.out.println("Bread Name \t|\t  Price \t|\t  Quantity \t|\t  Total");
            fw.write("\n\t\t ---------------------Receipt------------------");
+           fw.write("\nDate: " + myDateString);
            fw.write("\nBread Name \t|\t  Price \t|\t  Quantity \t|\t  Total");
            
            total = 0;
@@ -124,5 +126,6 @@ public class ReceiptGenerator {
            fw.write("\n\t\tThank you for purchasin our product! ");
            fw.write("\n\t\t\tPlease come again! ");
            fw.close();
+           
     }    
 }

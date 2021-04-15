@@ -1,0 +1,12 @@
+
+		 ---------------------Receipt------------------
+Date: 2021-04-15-21-21-04
+Bread Name 	|	  Price 	|	  Quantity 	|	  Total
+Bread	-		15.0		-		1		-		15.0
+Cherry	-		25.0		-		3		-		75.0
+Total: 90.0
+-----------------------------------------------------
+Payment: 100.0
+Change: 10.0
+		Thank you for purchasin our product! 
+			Please come again! 
