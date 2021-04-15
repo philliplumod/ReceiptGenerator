@@ -1,0 +1,11 @@
+
+		 ---------------------Receipt------------------
+Bread Name 	|	  Price 	|	  Quantity 	|	  Total
+Bread	-		15.0		-		1		-		15.0
+Cherry	-		25.0		-		1		-		25.0
+Total: 40.0
+-----------------------------------------------------
+Payment: 100.0
+Change: 60.0
+		Thank you for purchasin our product! 
+			Please come again! 
